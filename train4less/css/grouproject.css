@@ -1,0 +1,204 @@
+/*gemeral styles*/
+*{padding:0; margin:0;}
+body{font-family: 'Open Sans', sans-serif; height:100%; font-size:100%;}
+ul{list-style-type:none;}
+a{text-decoration:none;}
+h1{font:900 3.5em 'Oswald', sans-serif; text-transform:uppercase;padding:20px 0;}
+h2{font:700 3em 'Oswald', sans-serif; text-align: center; text-transform:capitalize; padding:2% 0 0;letter-spacing:0.1em}
+h3{font-size:2.5em;}
+h4{font-style:italic; font-weight:lighter; font-size:1.2em;}
+
+hr{width:20%; margin:0 auto;  margin-top:2%;border-color:#413c3a; }
+hr{width:20%; margin:0 auto;  margin-top:2%;border-color:#413c3a; }
+
+#wrapper{
+	width:  70%;
+	margin: auto;
+}
+p{padding:2% 0;}
+p.box{ width: 63%;
+    float: left;
+    padding-top: 7%;
+    padding-left: 2%;}
+#wrapper a {color:#000; padding:5px 20px; border:3px solid #c86caa; text-transform:uppercase; font-weight:bold;}
+#wrapper a:hover{opacity:0.5;}
+#wrapper a.purple{background:#c86caa; padding:8px 23px;}
+#banner{width:100%; background-size:cover; background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placehold.it/350x150'); height:200px;}
+#banner h2{color:#fff; top:60px; padding-left:20px; text-align:left;}
+
+
+
+
+/*navigation styles*/
+#logo{position:absolute; top:0; left:0}
+ul{height:60px;text-transform:capitalize; font-size:0.821em; line-height:60px;}
+ul li{float:right; width:115px; color:#413c3a; border-left:1px solid rgba(65,60,58,.3); text-align:center; }
+ul li:hover{background-color:rgba(200,108,170,.7);}
+.active,a li:active{color:#fff;background:#c86caa;}
+
+/*end of nav styles*/
+
+
+/*slider styles*/
+
+.bannertxt{position:absolute; top:250px; color:white; width:100%; text-align:center; z-index:999; height:200px;}
+.bannertxt a{background:rgba(0,0,0,.3); color:#fff; padding:5px 20px; border:3px solid #c86caa; text-transform:uppercase; font-weight:bold;}
+.bannertxt a.purple{background:#c86caa; padding:8px 23px;}
+
+.fluid_container {
+	 height: 600px; position: relative; left: 0; right: 0; top: 0; z-index: 0;
+}
+#fluid_dg_wrap_4 {
+ height: 100%; left: 0;
+	margin-bottom: 0 !important;
+	position: relative; right: 0; top: 0;
+}
+.fluid_dg_bar {
+	z-index: 2;
+}
+.fluid_dg_prevThumbs, 
+.fluid_dg_nextThumbs, 
+.fluid_dg_prev, 
+.fluid_dg_next, 
+.fluid_dg_commands, 
+.fluid_dg_thumbs_cont {
+	background: #222;
+	background: rgba(2, 2, 2, .7);
+}
+.fluid_dg_thumbs {
+	margin-top: -100px; position: relative; z-index: 1;
+}
+.fluid_dg_thumbs_cont {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.fluid_dg_overlayer {
+	opacity: .1;
+}
+
+/*end of slider styles*/  
+
+
+/*styles for home page*/
+
+
+
+.box{
+    width: 100%;
+   
+    float: left;
+    padding: 2% 2% 0.5% 0;
+    box-sizing: border-box;
+}
+
+
+.imgBox{
+   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    border: 1px solid #000;
+    margin: 0 20px 10px 30px;
+    width: 30%;
+    height: 19em;
+    position: relative;
+}
+
+.personalTrainer{
+    background-image: url(../images/homepage/personal-trainer.jpg);
+  
+}
+
+.classes{
+	background-image: url(../images/homepage/dumbbells.jpg);
+}
+
+.nutritions{
+	background-image: url(../images/homepage/nutrition.jpg);
+}
+
+.lastBox{
+	margin-bottom: 2%;
+}
+
+.box a {
+    border: 1px solid #000;
+    padding: 0.5% 3%;
+    float: right;
+    margin: 1% 5% 0 0;
+}
+
+.imgBox h3{
+    background-color: #000;
+    opacity: .6;
+    width: 100%;
+    height: 7.6em;
+    position: absolute;
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 7.6em;
+    font-size: 2.5em;
+    transition: all .2s;
+	
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-webkit-transition: all .2s;
+	
+}
+
+.imgBox h3:hover{
+	opacity:0;
+}
+
+/*styles for team page*/
+
+.imgBox2{
+	float:left;
+	width:30%;
+	margin-right:3%;
+	padding-top:40%;
+}
+
+#teamtxt,#teambtn{clear:both;}
+.teamtxt,.teambtn{
+	float:left;
+	width:30%;
+	margin-right:3%;
+	}
+	
+#teambtn{padding-top:2%;}	
+	
+	
+#team1{background:url(../images/team/vitaliepic.jpg); background-size:cover;}
+#team2{background:url(../images/team/milenapic.jpg); background-size:cover;}
+#team3{background:url(../images/team/florinpic.jpg); background-size:cover; margin-right:0;}
+
+/*##### Subscribe Section #####*/
+div#subscribeSection {
+    clear: both;
+    padding: 0 5%;
+}
+
+
+#subscribeSection h3{
+    text-align: center;
+    padding: 4% 0 1% 0;
+    text-transform: uppercase;
+    font-size: 1em;  
+}
+
+#subscribeSection form {
+	width: 200px;
+	border1px solid #000;
+}
+
+@media and screen only (max-width:500px){
+	font-size:80%;
+	
+}
+
+
+/*end of styles for middle section*/

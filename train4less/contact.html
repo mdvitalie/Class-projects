@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<!--
+	Gym	Website 
+   Created by Florin Andreas, Milena Sahni and Vitalie Brescanu 14/05/2018
+-->
+
+<!-- External CSS -->
+<link rel="stylesheet" type="text/css" href="css/groupproject.css"/>
+<!-- External Mobile -->
+<link rel="stylesheet" media="(max-width: 600px)" href="css/mobile.css" />
+<!--Fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"/>
+<link rel='stylesheet' id='fluid_dg-css'  href='css/fluid_dg.css' type='text/css' media='all'/>
+<!-- External Mobile -->
+<link rel="stylesheet" media="(max-width: 600px)" href="css/mobile.css" />
+
+<!-- Google Map -->
+<script  type="text/javascript"  src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script  type="text/javascript">
+	function initialize(){
+		var mapCanvas = document.getElementById('googleMapLocation');
+		var mapOptions = {          
+               center: new google.maps.LatLng(53.400404, -6.588762),          
+               zoom: 12,          
+               mapTypeId: google.maps.MapTypeId.ROADMAP  
+			   
+     } 
+		
+		 var map = new google.maps.Map(mapCanvas, mapOptions)
+		
+		var marker = new google.maps.Marker({      
+		position: new google.maps.LatLng(53.400404, -6.588762),      
+		map: map,  animation: google.maps.Animation.BOUNCE,   
+		title: 'Train4Less GYM'  });
+	}
+	
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Contact</title>
+</head>
+<body>
+
+<!--navigation-->
+<img src="Images/logo/logo.jpg" alt="company logo" id="logo"/>
+
+
+<ul>  
+<li class="active"><a href="freetrial.html">free trial</a></li>
+<li><a href="contact.html">contact</a></li>
+<li><a href="membership.html">membership</a></li>
+<li><a href="classes.html">classes</a></li>
+<li><a href="team.html">team</a></li>
+<li><a href="index.html">home</a></li>
+  
+</ul>
+<!--end of navigation-->
+
+
+<!-- Banner-->
+	<div id="banner">
+	<h1>Contact</h1>
+	
+	
+	</div><!--end of banner-->
+
+<!-- Start of Wrapper -->
+<div id="wrapper">
+	
+	<div id="container">
+		
+		<h2 class="leftH2">Contact us</h2>
+		
+		<div class="box">
+		
+			<div class="contactMobile">
+				Mobile: 01-1254789
+			</div>
+			<div id="email" class="contactEmail">
+				Email:<a href="mailto:train4less@gmail.com">train4less@gmail.com</a>
+			</div>
+		
+		</div><!-- End of box -->
+		
+		<!-- OPEN HOURS -->
+		<div class="box">
+				<div class="openHours">
+					<h3>Open hours</h3>
+					<p>
+					Monday – Friday 7:00 am. – 22:00 pm.
+					</p>
+					<p>
+					Saturday 8:00 am. – 17:30 pm.
+					</p>
+					<p>
+					Sunday Closed
+					</p>			
+				</div>	
+				
+		<!-- OUR LOCATION -->
+				<div class="ourLocation">
+					<h3>Our location</h3>
+					<p>
+					Finglas 72 Avenue
+					</p>
+					<p>
+					Dublin-50
+					</p>
+					
+				</div>
+				
+		</div><!-- End of box -->
+		
+		<div class="box">
+			
+		
+		</div><!-- End of box -->
+		<!--Contact Form -->
+		<div id="contactFormContainer">		
+			<form method="post" action="">
+			   <label class="fromLeft" for="name">Full name: </label>
+				<input class="fromRigth" type="text" name="name" id="name"/>
+				
+				<label class="fromLeft" for="contactemail">Email: </label>
+				<input class="fromRigth" type="text" name="contactemail"  id="contactemail"/>
+				
+				<label class="fromLeft" for="phone">Phone: </label>
+				<input class="fromRigth" type="text" name="phone"  id="phone"/>
+				
+				<label class="fromLeft" for="message">Message: </label>
+				<textarea class="fromRigth" id="message"rows="10" cols="30"></textarea>
+					<input  class="submit fromRigth" type="submit" value="SUBMIT"/>
+			
+			</form>
+		</div><!--End of  contactFormContainer  -->
+		
+		<!-- Map location -->
+		<div id="googleMapLocation">
+		
+		
+		</div><!-- End of googleMapLocation -->
+		
+	</div><!-- End of container -->
+</div><!-- End of wrapper -->
+
+<!-- ##### FOOTER -->
+<div class="footer">
+	<p>
+	<span>Copyright &copy; - 2018 Train4Less. All Rights Reserved.</span>
+	</p>
+	<div class="socialmedia">
+		<i class="fab fa-facebook-square"></i>
+		<i class="fab fa-twitter-square"></i>
+		<i class="fab fa-youtube"></i>
+		<i class="fab fa-linkedin"></i>
+	</div>
+</div><!-- End of footer -->
+
+
+
+	
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+#nav ul li { 
+	width: 100%;
+	height: auto;
+	/*line-height: auto;*/						
+}
+
+#togglemenu {
+	height: 50px;
+	width: 60px;
+	background: gray;
+	float: right;
+	display: block;
+}
+
+#togglemenu  div {
+	height: 4px;
+	background: white;
+	border: 5px;
+	margin: 9px;
+}
+
+#nav ul {
+	display: none;
+}

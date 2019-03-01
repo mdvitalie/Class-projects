@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+<!--
+	Gym	Website 
+   Created by Florin Andreas, Milena Sahni and Vitalie Brescanu 14/05/2018
+-->
+
+<!-- External CSS -->
+<link rel="stylesheet" type="text/css" href="css/groupproject.css"/>
+<!-- External Mobile -->
+<link rel="stylesheet" media="(max-width: 800px)" href="css/mobile.css" />
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"/>
+<link rel='stylesheet' id='fluid_dg-css'  href='css/fluid_dg.css' type='text/css' media='all'/>
+
+<!--fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+
+<!--CDN jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+<!-- Title for your webpage -->
+<title>Free Trail Membership | 30 days</title>
+</head>
+<body>
+
+
+<!--navigation-->
+<img src="Images/logo/logo.jpg" alt="company logo" id="logo"/>
+ 
+ <div id="nav">
+ <div id="togglemenu">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+	<ul>  
+	<li class="active"><a href="freetrial.html">free trial</a></li>
+	<li><a href="contact.html">contact</a></li>
+	<li><a href="membership.html">membership</a></li>
+	<li><a href="classes.html">classes</a></li>
+	<li><a href="team.html">team</a></li>
+	<li><a href="index.html">home</a></li>
+	  
+	</ul>
+	
+</div>
+<!--end of navigation-->
+
+<!-- Banner-->
+	<div id="banner">
+		<h1>free trial</h1>
+	</div><!--end of banner-->
+
+
+<div id="wrapper">
+	
+	<div id="container">
+		
+		<h2 class="leftH2">Please fill in this form for free 30 days trial</h2>
+		<p>
+		 *Please note money will only be taken from your account after 30 days , unless you decide to cancel your trial before than
+		</p>
+		<p>
+		  *Please check your email for the membership unique 12-digit pass
+		</p>
+		
+		
+		
+		<div class="box">
+			
+		
+		</div><!-- End of box -->
+		<!--Contact Form -->
+		<div id="contactFormContainer">		
+			<form method="post" action="">
+			   <label class="fromLeft" for="name">First name: </label>
+				<input class="fromRigth" type="text" name="name" id="name"/>
+				<label class="fromLeft" for="lastname">Last name: </label>
+				<input class="fromRigth"  type="text" name="lastname" id="lastname"/>
+				
+				<label class="fromLeft" for="email">Email: </label>
+				<input class="fromRigth" type="text" name="email"  id="email"/>
+				
+				<label class="fromLeft" for="phone">Phone: </label>
+				<input class="fromRigth" type="text" name="phone"  id="phone"/>
+				
+				<label class="fromLeft" for="address1">Address 1: </label>
+				<input class="fromRigth" type="text" name="address1"  id="address1"/>
+				
+				<label class="fromLeft" for="address2">Address 2: </label>
+				<input class="fromRigth" type="text" name="address2"  id="address2"/>
+	
+				
+				<label class="fromLeft" for="selectCounty">County:</label>
+				<div class="fromRigth" id="countySelect">
+					<select name="selectCounty" id="selectCounty">
+						<option value="">Select County</option>
+						<option value="antrim">Antrim</option>
+						<option value="clare">Clare</option>
+						<option value="cork">Cork</option>
+						<option value="dublin">Dublin</option>
+						<option value="donegal">Donegal</option>
+					</select>
+				</div>
+				
+				
+				<!--credit card images -->
+				<div id="creditCardPayment" class="box">
+					<img src="images/freetrial/visa.png" id="visa" alt="visa" width="32" height="20"/>
+					<img src="images/freetrial/master.png" id="master" alt="master" width="32" height="20"/>
+					<img src="images/freetrial/americanexpress.png" id="americanExpress" alt="americanexpress" width="32" height="20"/>
+					<img src="images/freetrial/paypal.png" id="paypal" alt="paypal" width="32" height="20"/>
+					<img src="images/freetrial/bitcoin.png" id="bitcoin" alt="bitcoin" width="32" height="20"/>
+				</div><!-- End of creditCardPayment -->
+				
+				<label class="fromLeft" for="paymentOption">Payment:</label>
+				<select onchange="showCard(this)" class="fromRigth" name="paymentOption" id="paymentOption">
+					<option value="">Select payment</option>
+					<option value="visa">Visa card</option>
+					<option value="master">Master Card</option>
+					<option value="americanExpress">American Express</option>
+					<option value="paypal">PayPal</option>
+					<option value="bitcoin">Bitcoin</option>
+				</select>
+				
+				<label class="fromLeft" for="cardNumber">Credit card number </label>
+				<input class="fromRigth" type="text" name="cardNumber" id="cardNumber"/>
+				
+				<label class="fromLeft" for="cardHoldName">Credit card Holder Name </label>
+				<input class="fromRigth" type="text" name="cardHoldName" id="cardHoldName"/>
+				
+				<label class="fromLeft" for="expDate">Expiration Date </label>
+				<input class="fromRigth" type="text" name="expDate" id="expDate"/>
+				
+				<label class="fromLeft" for="securityCode">Security code:</label> <span class="fromLeft">Is the last three digits on the back of your card </span>
+				<input class="fromRigth" type="text" name="securityCode" id="securityCode"/>
+				
+					<input  class="submit fromRigth" type="submit" value="SUBMIT"/>
+			
+			</form>
+		</div><!--End of  contactFormContainer  -->
+		
+		
+		
+	</div><!-- End of container -->
+</div><!-- End of wrapper -->
+
+<!-- ##### FOOTER -->
+<div class="footer">
+	<p>
+	<span>Copyright &copy; - 2018 Train4Less. All Rights Reserved.</span>
+	</p>
+	<div class="socialmedia">
+		<i class="fab fa-facebook-square"></i>
+		<i class="fab fa-twitter-square"></i>
+		<i class="fab fa-youtube"></i>
+		<i class="fab fa-linkedin"></i>
+	</div>
+</div><!-- End of footer -->
+
+<!--on select option -->
+<script>
+	
+	
+	
+	</script>
+
+	<!-- External JS -->
+	<script src="js/external_script.js"></script>
+</body>
+
+</html>
